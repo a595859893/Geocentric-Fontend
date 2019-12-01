@@ -1,6 +1,6 @@
 <template>
 	<view class="content">
-		<view id="map" />
+		<map id="map" />
 		<view class="chat-body">
 			<input class="chat-input" type="text" />
 			<button class="chat-send">发送</button>
@@ -9,9 +9,6 @@
 </template>
 
 <script>
-	import {
-		lazyAMapApiLoaderInstance
-	} from 'vue-amap';
 	export default {
 		data() {
 			return {
@@ -19,11 +16,7 @@
 			}
 		},
 		onLoad() {
-			lazyAMapApiLoaderInstance.load().then(() => {
-				this.map = new AMap.Map('map', {
-					center: new AMap.LngLat(121.59996, 31.197646)
-				});
-			});
+
 		},
 		methods: {
 
@@ -53,8 +46,8 @@
 		color: #FFFFFF;
 		border-radius: 25rpx;
 	}
-	
-	.chat-send{
+
+	.chat-send {
 		background: #AADDFF;
 	}
 

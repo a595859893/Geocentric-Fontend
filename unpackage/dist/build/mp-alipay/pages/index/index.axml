@@ -1,0 +1,1 @@
+<view class="content"><view id="map"></view><view class="chat-body"><input class="chat-input" type="text"/><button class="chat-send">发送</button></view></view>

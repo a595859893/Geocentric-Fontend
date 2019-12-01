@@ -1,0 +1,12 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "defaultTitle": "地心说",
+    "titleBarColor": "#66ccff",
+    "backgroundColor": "#66ccff"
+  },
+  "usingComponents": {}
+}

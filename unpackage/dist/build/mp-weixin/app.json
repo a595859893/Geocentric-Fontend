@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "pages/index/index"
+  ],
+  "subPackages": [],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "地心说",
+    "navigationBarBackgroundColor": "#66ccff",
+    "backgroundColor": "#66ccff"
+  },
+  "usingComponents": {},
+  "sitemapLocation": "sitemap.json"
+}

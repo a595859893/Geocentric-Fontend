@@ -51,12 +51,21 @@
 	    -ms-flex-pack: center;
 	        justify-content: center;
 }
-#map {
+#map-body {
 	height: 85vh;
 	width: 100vw;
 	display: -webkit-box;
 	display: -webkit-flex;
 	display: -ms-flexbox;
 	display: flex;
+}
+#debug {
+	position: absolute;
+	top: 0vh;
+	left: 0vw;
+	width: 30vh;
+	height: 10vw;
+	background: #FFFFFF;
+	z-index: 10;
 }
 

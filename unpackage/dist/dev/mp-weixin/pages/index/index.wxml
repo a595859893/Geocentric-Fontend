@@ -1,1 +1,1 @@
-<view class="content"><map id="map"></map><view class="chat-body"><input class="chat-input" type="text"/><button class="chat-send">发送</button></view></view>
+<view class="content"><view id="debug">{{debugMsg}}</view><map class="vue-ref" id="map-body" latitude="{{latitude}}" longitude="{{longitude}}" markers="{{covers}}" show-location="true" data-ref="map-body" data-event-opts="{{[['tap',[['clickMap',['$event']]]]]}}" bindtap="__e"></map><view class="chat-body"><input class="chat-input" type="text"/><button class="chat-send">发送</button></view></view>

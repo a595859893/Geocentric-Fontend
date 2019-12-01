@@ -132,7 +132,10 @@ __webpack_require__.r(__webpack_exports__);
 /***/ (function(module, exports, __webpack_require__) {
 
 "use strict";
-Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+/* WEBPACK VAR INJECTION */(function(uni) {Object.defineProperty(exports, "__esModule", { value: true });exports.default = void 0; //
+//
+//
+//
 //
 //
 //
@@ -146,13 +149,56 @@ var _default =
 {
   data: function data() {
     return {
-      title: 'Hello' };
+      title: 'Hello',
+      latitude: 39.909,
+      longitude: 116.39742,
+      covers: [{
+        latitude: 39.909,
+        longitude: 116.39742,
+        iconPath: '../../../static/logo.png' },
+      {
+        latitude: 39.90,
+        longitude: 116.39,
+        iconPath: '../../../static/logo.png' }],
+
+      debugMsg: "随便塞点信息在这里" };
+
+  },
+  onReady: function onReady() {
+    var that = this;
+    // https://uniapp.dcloud.io/api/location/map?id=createmapcontext
+    // 据说可以获得当前位置
+    // 但是我调用了没反应
+    // 你们可以看看是有什么条件还是什么情况
+    uni.getLocation({
+      type: 'gcj02', //返回可以用于uni.openLocation的经纬度
+      success: function success(res) {
+        that.latitude = res.latitude;
+        that.longitude = res.longitude;
+      } });
 
   },
   onLoad: function onLoad() {
 
   },
-  methods: {} };exports.default = _default;
+  methods: {
+    clickMap: function clickMap(e) {
+      console.log(e);
+      this.getCenter();
+    },
+    getCenter: function getCenter() {
+      // https://uniapp.dcloud.io/api/location/map?id=createmapcontext
+      var appMap = uni.createMapContext("map-body", this);
+      var that = this;
+      // 没找到鼠标点击位置的经纬度怎么获取
+      // 但是可以获取地图中心的经纬度
+      appMap.getCenterLocation({
+        success: function success(res) {
+          that.debugMsg = res.latitude + "," + res.longitude;
+        } });
+
+    } } };exports.default = _default;
+/* WEBPACK VAR INJECTION */}.call(this, __webpack_require__(/*! ./node_modules/@dcloudio/uni-mp-weixin/dist/index.js */ 1)["default"]))
 
 /***/ }),
 /* 22 */

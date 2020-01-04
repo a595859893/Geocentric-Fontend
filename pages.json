@@ -1,16 +1,28 @@
 {
-	"pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+	"pages": [
 		{
 			"path": "pages/index/index",
-			"style": {
-				"navigationBarTitleText": "uni-app"
-			}
+            "style" : {}
 		}
-	],
+	    ,{
+            "path" : "pages/add/add",
+            "style" : {}
+        },
+        {
+            "path": "pages/register/register",
+            "style": {}
+        }
+    ],
+	
 	"globalStyle": {
 		"navigationBarTextStyle": "black",
 		"navigationBarTitleText": "地心说",
 		"navigationBarBackgroundColor": "#66ccff",
 		"backgroundColor": "#66ccff"
-	}
+	},
+  "permission": {
+    "scope.userLocation": {
+      "desc": "你的位置信息将用于小程序位置接口的效果展示"
+    }
+  }
 }

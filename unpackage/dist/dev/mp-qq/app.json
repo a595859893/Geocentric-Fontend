@@ -1,0 +1,13 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/add/add"
+  ],
+  "window": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "小众点评",
+    "navigationBarBackgroundColor": "#66ccff",
+    "backgroundColor": "#66ccff"
+  },
+  "usingComponents": {}
+}

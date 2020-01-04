@@ -81,5 +81,16 @@
     },
     "mp-toutiao" : {
         "usingComponents" : true
+    },
+    "h5" : {
+        "title" : "Geocentric",
+        "domain" : "https://geo.littlehumming.cn:3001",
+        "sdkConfigs" : {
+            "maps" : {
+                "qqmap" : {
+                    "key" : "ZZTBZ-VRILU-MHJVG-2UEGU-77HA3-ZUFK7"
+                }
+            }
+        }
     }
 }

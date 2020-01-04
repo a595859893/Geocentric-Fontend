@@ -1,0 +1,68 @@
+
+.logo-area {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	        justify-content: center;
+	font-size: x-large;
+	margin-top: 50rpx;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 30rpx;
+	color: #9b4400;
+}
+.marker_item{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	margin-top: 50rpx;
+	margin-left: 90rpx;
+	font-size: large;
+	/*
+	cb3a56茜红
+	065279蓝
+	9b4400棕红
+	*/
+}
+.word{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	text-align: left;
+	border-bottom: 1px solid #6699CC;
+	margin-right: 50rpx;
+	font-weight: 500;
+	color: #3C3E49;
+}
+.input_style{
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: flex;
+	position: fixed;
+	bottom: 100rpx;
+	-webkit-box-pack: start;
+	-webkit-justify-content: flex-start;
+	        justify-content: flex-start;
+	margin-top: 100rpx;
+	margin-left: 90rpx;
+	font-size: large;
+}
+.word2{
+	-webkit-box-flex: 1;
+	-webkit-flex: 1;
+	        flex: 1;
+	text-align: left;
+	margin-right: 50rpx;
+	color: #3C3E49;
+	border-bottom: 1px solid #cb3a56;
+}
+.button_style{
+	margin-right: 20rpx;
+	color: #5989B9;
+}
+
